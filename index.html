@@ -3,51 +3,183 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Link Affiliate Baix</title>
+
+<title>MARKETCOM — Promo Viral</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:Arial;background:#f4f6f8;}
-header{background:#ff5722;color:white;text-align:center;padding:30px;}
-.container{max-width:700px;margin:auto;padding:20px;}
-.menu{
-display:block;
-background:white;
-margin:15px 0;
-padding:18px;
-text-align:center;
-border-radius:10px;
-text-decoration:none;
-color:#333;
-font-weight:bold;
-box-shadow:0 3px 8px rgba(0,0,0,0.1);
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif;}
+
+body{
+background:#f6f7fb;
+color:#222;
 }
-.menu:hover{background:#ffe0d3;}
-footer{text-align:center;font-size:12px;color:#777;padding:25px;}
+
+/* HEADER */
+header{
+background:linear-gradient(135deg,#ff5722,#ff9800);
+color:white;
+padding:35px 20px;
+text-align:center;
+border-radius:0 0 25px 25px;
+}
+
+header h1{font-size:28px;font-weight:700;}
+header p{margin-top:8px;font-size:14px;opacity:.9;}
+
+/* BADGE */
+.badge{
+background:#fff;
+color:#ff5722;
+display:inline-block;
+padding:6px 14px;
+border-radius:20px;
+font-size:12px;
+font-weight:600;
+margin-top:12px;
+}
+
+/* CONTAINER */
+.container{
+max-width:700px;
+margin:auto;
+padding:20px;
+}
+
+/* CATEGORY CARD */
+.card{
+background:white;
+border-radius:15px;
+padding:18px;
+margin-bottom:15px;
+display:flex;
+align-items:center;
+gap:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.2s;
+text-decoration:none;
+color:#222;
+}
+
+.card:hover{
+transform:scale(1.02);
+}
+
+.icon{
+font-size:28px;
+width:50px;
+height:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#fff3ec;
+border-radius:50%;
+}
+
+.card h3{
+font-size:16px;
+margin-bottom:4px;
+}
+
+.card span{
+font-size:12px;
+color:#777;
+}
+
+/* HOT */
+.hot{
+background:#ff3d00;
+color:white;
+font-size:10px;
+padding:3px 8px;
+border-radius:20px;
+margin-left:6px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:25px 10px;
+font-size:12px;
+color:#777;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Link Affiliate Baix</h1>
-<p>Pilih Kategori Produk</p>
+<h1>🔥 MARKETCOM</h1>
+<p>Promo Viral & Barang Murah Setiap Hari</p>
+
+<div class="badge">💰 Link Resmi Affiliate</div>
 </header>
+
 
 <div class="container">
 
-<a class="menu" href="gadget.html">📱 GADGET & AKSESORIS</a>
-<a class="menu" href="kecantikan.html">💄 PODUK KECANTIKAN</a>
-<a class="menu" href="wanita.html">👗 OUTFIT WANITA</a>
-<a class="menu" href="pria.html">👔 OUTFIT PRIA</a>
-<a class="menu" href="elektronik.html">🔌 SEPERANGKAT ELEKTRONIK</a>
-<a class="menu" href="otomotif.html">🏍️ SEPERANGKAT OTOMOTIF</a>
-<a class="menu" href="buku.html">📚 PERPUSTAKAAN</a>
-<a class="menu" href="rumah.html">🏠 PERLENGKAPAN RUMAH</a>
+<a href="gadget.html" class="card">
+<div class="icon">📱</div>
+<div>
+<h3>Gadget & Aksesoris <span class="hot">HOT</span></h3>
+<span>Powerbank • Headset • Holder</span>
+</div>
+</a>
+
+<a href="kecantikan.html" class="card">
+<div class="icon">💄</div>
+<div>
+<h3>Produk Kecantikan</h3>
+<span>Skincare • Make Up • Parfum</span>
+</div>
+</a>
+
+<a href="wanita.html" class="card">
+<div class="icon">👗</div>
+<div>
+<h3>Outfit Wanita <span class="hot">TREND</span></h3>
+<span>Dress • Hijab • Tas</span>
+</div>
+</a>
+
+<a href="pria.html" class="card">
+<div class="icon">👔</div>
+<div>
+<h3>Outfit Pria</h3>
+<span>Jaket • Kaos • Sepatu</span>
+</div>
+</a>
+
+<a href="elektronik.html" class="card">
+<div class="icon">⚡</div>
+<div>
+<h3>Elektronik</h3>
+<span>Rice Cooker • Lampu • Kipas</span>
+</div>
+</a>
+
+<a href="otomotif.html" class="card">
+<div class="icon">🏍️</div>
+<div>
+<h3>Otomotif</h3>
+<span>Helm • Aksesoris • Oli</span>
+</div>
+</a>
+
+<a href="buku.html" class="card">
+<div class="icon">📚</div>
+<div>
+<h3>Buku & Edukasi</h3>
+<span>Bisnis • Motivasi • Skill</span>
+</div>
+</a>
 
 </div>
 
+
 <footer>
-Affiliate Partner © Baix
+© 2026 MARKETCOM • Powered by Baix
 </footer>
 
 </body>
