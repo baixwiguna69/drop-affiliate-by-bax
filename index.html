@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MARKETCOM — Neon Shop</title>
+<title>Marketcom.id | Affiliate Store</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -17,243 +18,238 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#050510;
+background:#05050f;
 color:white;
 }
 
 /* HEADER */
 
 header{
-padding:30px 20px;
+padding:20px;
 text-align:center;
-background:linear-gradient(135deg,#00f2ff,#ff00ff);
-box-shadow:0 0 30px #00f2ff;
-}
-
-header h1{
-font-size:32px;
+font-size:26px;
 font-weight:700;
-text-shadow:0 0 15px white;
-}
-
-header p{
-margin-top:5px;
-opacity:.9;
-}
-
-/* SEARCH */
-
-.search{
-margin:25px auto;
-max-width:600px;
-display:flex;
-background:#0d0d25;
-border-radius:30px;
-padding:8px;
-border:2px solid #00f2ff;
-box-shadow:0 0 15px #00f2ff;
-}
-
-.search input{
-flex:1;
-background:none;
-border:none;
-outline:none;
-color:white;
-padding:10px 15px;
-}
-
-.search button{
-background:#ff00ff;
-border:none;
-color:white;
-padding:10px 20px;
-border-radius:20px;
-cursor:pointer;
-box-shadow:0 0 10px #ff00ff;
+color:#00f6ff;
+text-shadow:0 0 10px #00f6ff,0 0 20px #ff00ff;
 }
 
 /* CATEGORY */
 
 .categories{
 display:flex;
-gap:15px;
-overflow-x:auto;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
 padding:20px;
 }
 
 .cat{
-min-width:120px;
-background:#0d0d25;
-border:2px solid #00f2ff;
-border-radius:15px;
-padding:15px;
-text-align:center;
-box-shadow:0 0 12px #00f2ff;
+padding:10px 18px;
+border:1px solid #00f6ff;
+border-radius:20px;
 cursor:pointer;
+color:#00f6ff;
+transition:.3s;
+box-shadow:0 0 8px #00f6ff;
 }
 
-.cat.active{
-background:#ff00ff;
-border-color:#ff00ff;
+.cat:hover,.cat.active{
+background:#00f6ff;
+color:#05050f;
+box-shadow:0 0 15px #00f6ff,0 0 25px #ff00ff;
 }
 
 /* PRODUCTS */
 
-.section{
-padding:20px;
-max-width:1100px;
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+padding:25px;
+max-width:1200px;
 margin:auto;
 }
 
-.section h2{
-margin-bottom:15px;
-font-size:22px;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-gap:18px;
-}
-
 .card{
-background:#0d0d25;
+background:#0b0b1c;
 border-radius:15px;
 padding:15px;
-border:2px solid #00f2ff;
-box-shadow:0 0 15px #00f2ff;
-transition:.2s;
+text-align:center;
+box-shadow:0 0 15px rgba(0,246,255,.2);
+transition:.3s;
 }
 
 .card:hover{
-transform:scale(1.05);
-border-color:#ff00ff;
-box-shadow:0 0 25px #ff00ff;
+transform:translateY(-6px);
+box-shadow:0 0 20px #00f6ff,0 0 30px #ff00ff;
 }
 
 .card img{
 width:100%;
-height:140px;
+height:220px;
 object-fit:cover;
 border-radius:10px;
 }
 
 .card h3{
-font-size:14px;
-margin:8px 0 4px;
+margin:10px 0 5px;
+font-size:17px;
 }
 
 .card p{
-font-size:13px;
 color:#ff00ff;
 font-weight:600;
+margin-bottom:10px;
 }
 
 .card a{
 display:block;
-margin-top:8px;
-text-align:center;
-background:#00f2ff;
-color:black;
-padding:6px;
+padding:10px;
+background:linear-gradient(45deg,#00f6ff,#ff00ff);
 border-radius:20px;
-font-size:12px;
+color:white;
 text-decoration:none;
 font-weight:600;
-box-shadow:0 0 10px #00f2ff;
+}
+
+.card a:hover{
+opacity:.8;
 }
 
 /* FOOTER */
 
 footer{
-padding:25px;
 text-align:center;
-font-size:12px;
+padding:20px;
 color:#aaa;
+font-size:14px;
 }
+
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-
 <header>
-<h1>⚡ MARKETCOM</h1>
-<p>Neon Deals • Promo Viral • Murah Pol</p>
+⚡ Marketcom.id ⚡<br>
+Affiliate Store
 </header>
 
-<!-- SEARCH -->
-
-<div class="search">
-<input type="text" placeholder="Cari produk viral...">
-<button>🔍</button>
-</div>
-
-<!-- CATEGORIES -->
+<!-- CATEGORY -->
 
 <div class="categories">
 
-<div class="cat active">🔥 All</div>
-<div class="cat">📱 Gadget</div>
-<div class="cat">💄 Beauty</div>
-<div class="cat">👗 Fashion</div>
-<div class="cat">⚡ Elektronik</div>
-<div class="cat">🏍️ Otomotif</div>
-<div class="cat">📚 Buku</div>
+<div class="cat active" data-filter="all">🔥 All</div>
+<div class="cat" data-filter="gadget">📱 GADGET & AKSESORIS</div>
+<div class="cat" data-filter="beauty">💄 SEPERANGKAT KECANTIKAN</div>
+<div class="cat" data-filter="fashion">👗 FASHION</div>
+<div class="cat" data-filter="elektronik">⚡ SEPERANGKAT ELEKTRONIK</div>
+<div class="cat" data-filter="otomotif">🏍️ SEPERANGKAT OTOMOTIF</div>
+<div class="cat" data-filter="buku">📚 PERPUSTAKAAN</div>
+<div class="cat" data-filter="rumah">🏠 PERLENGKAPAN RUMAH</div>
 
 </div>
 
 <!-- PRODUCTS -->
 
-<div class="section">
-
-<h2>🔥 Produk Viral</h2>
-
 <div class="products">
 
-<!-- PRODUK 1 -->
-<div class="card">
+<!-- GADGET -->
+
+<div class="card" data-category="gadget">
 <img src="img/powerbank.jpg">
-<h3>Powerbank Mini</h3>
+<h3>Powerbank Mini 10.000mAh</h3>
 <p>Rp49.000</p>
-<a href="#">BELI</a>
+<a href="#">Beli Sekarang</a>
 </div>
 
-<!-- PRODUK 2 -->
-<div class="card">
+<div class="card" data-category="gadget">
+<img src="img/earphone.jpg">
+<h3>Earphone Bass</h3>
+<p>Rp35.000</p>
+<a href="#">Beli Sekarang</a>
+</div>
+
+<!-- BEAUTY -->
+
+<div class="card" data-category="beauty">
 <img src="img/serum.jpg">
-<h3>Serum Glowing</h3>
+<h3>Serum Wajah Glowing</h3>
 <p>Rp39.000</p>
-<a href="#">BELI</a>
+<a href="#">Beli Sekarang</a>
 </div>
 
-<!-- PRODUK 3 -->
-<div class="card">
-<img src="img/holder.jpg">
-<h3>Holder Mobil</h3>
-<p>Rp29.000</p>
-<a href="#">BELI</a>
-</div>
+<!-- FASHION -->
 
-<!-- PRODUK 4 -->
-<div class="card">
-<img src="img/headset.jpg">
-<h3>Headset Gaming</h3>
+<div class="card" data-category="fashion">
+<img src="img/hoodie.jpg">
+<h3>Hoodie Oversize</h3>
 <p>Rp89.000</p>
-<a href="#">BELI</a>
+<a href="#">Beli Sekarang</a>
+</div>
+
+<!-- ELEKTRONIK -->
+
+<div class="card" data-category="elektronik">
+<img src="img/headset.jpg">
+<h3>Headset Gaming RGB</h3>
+<p>Rp129.000</p>
+<a href="#">Beli Sekarang</a>
+</div>
+
+<!-- OTOMOTIF -->
+
+<div class="card" data-category="otomotif">
+<img src="img/holder.jpg">
+<h3>Holder HP Mobil</h3>
+<p>Rp29.000</p>
+<a href="#">Beli Sekarang</a>
+</div>
+
+<!-- BUKU -->
+
+<div class="card" data-category="buku">
+<img src="img/buku.jpg">
+<h3>Buku Mindset Sukses</h3>
+<p>Rp45.000</p>
+<a href="#">Beli Sekarang</a>
 </div>
 
 </div>
-
-</div>
-
-<!-- FOOTER -->
 
 <footer>
-© 2026 MARKETCOM • Neon Affiliate System
+© 2026 Marketcom.id | Powered by Baix
 </footer>
+
+<script>
+
+const cats = document.querySelectorAll('.cat');
+const cards = document.querySelectorAll('.card');
+
+cats.forEach(cat=>{
+
+cat.addEventListener('click',()=>{
+
+cats.forEach(c=>c.classList.remove('active'));
+cat.classList.add('active');
+
+const filter = cat.dataset.filter;
+
+cards.forEach(card=>{
+
+if(filter==='all' || card.dataset.category===filter){
+card.style.display='block';
+}else{
+card.style.display='none';
+}
+
+});
+
+});
+
+});
+
+</script>
 
 </body>
 </html>
